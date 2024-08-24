@@ -26,9 +26,7 @@ RUN \
 
 
 # Copy scripts
-COPY start.sh ./
-COPY combine.py ./
-COPY rclone.conf ./
+COPY . .
 
 # Start script
 CMD ["bash", "start.sh"]
