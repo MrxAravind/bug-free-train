@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-FROM ngrok/ngrok
 EXPOSE 5244
 
 
@@ -20,6 +19,11 @@ RUN \
  chmod +x alist && \
  mv alist /usr/bin
 
+
+ RUN \
+ wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && \
+ tar -xvzf ~/ngrok-v3-stable-linux-amd64.tgz -C /usr/bin
+ 
  RUN curl -o /tmp/megacmd.deb https://mega.nz/linux/repo/xUbuntu_24.04/amd64/megacmd_1.7.0-6.1_amd64.deb && \
  apt-get install /tmp/megacmd.deb -y && \
  rm /tmp/megacmd.deb
