@@ -27,6 +27,6 @@ RUN \
 
 # Copy scripts
 COPY . .
-
+RUN mega-login $EMAIL $PASS
 # Start script
 CMD ["bash", "start.sh"]
