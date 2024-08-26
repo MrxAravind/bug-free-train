@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-
+FROM ngrok/ngrok
 EXPOSE 5244
 
 
