@@ -25,9 +25,7 @@ RUN curl -o /tmp/megacmd.deb https://mega.nz/linux/repo/xUbuntu_24.04/amd64/mega
 
 RUN \
  wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && \
- tar -xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/bin && \
- ngrok config add-authtoken 1r7Rk8GArrzk7cvajVFbQrR2Xid_3krk9Z52WeyLjXEMQ7yHy
-
+ tar -xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/bin
  
 # Copy scripts
 COPY . .
