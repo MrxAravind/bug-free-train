@@ -23,9 +23,6 @@ RUN curl -o /tmp/megacmd.deb https://mega.nz/linux/repo/xUbuntu_24.04/amd64/mega
  apt-get install /tmp/megacmd.deb -y && \
  rm /tmp/megacmd.deb
 
-RUN \
- wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && \
- tar -xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/bin
  
 # Copy scripts
 COPY . .
