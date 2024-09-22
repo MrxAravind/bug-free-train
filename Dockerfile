@@ -19,10 +19,6 @@ RUN \
  chmod +x alist && \
  mv alist /usr/bin
 
-RUN curl -o /tmp/megacmd.deb https://mega.nz/linux/repo/xUbuntu_24.04/amd64/megacmd_1.7.0-6.1_amd64.deb && \
- apt-get install /tmp/megacmd.deb -y && \
- rm /tmp/megacmd.deb
-
  
 # Copy scripts
 COPY . .
